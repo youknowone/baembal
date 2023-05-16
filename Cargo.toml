@@ -1,0 +1,14 @@
+[package]
+name = "baembal"
+version = "0.2.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "baembal"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustpython-parser = { git = "https://github.com/RustPython/Parser.git", rev = "fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec" }
+rustpython-ast = { git = "https://github.com/RustPython/Parser.git", rev = "fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec", features = ["pyo3", "pyo3-wrapper"]}
+pyo3 = { version = "0.18.3", features = ["num-bigint", "num-complex"] }
