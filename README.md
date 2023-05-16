@@ -75,8 +75,8 @@ And... please search for "draw legs on a snake". For a very long time, I wanted 
 ## Acknowledgement
 
 In addition to thanking of all of the RustPython developers and contributors for the great time of 5 years,
-I also must recognize @charliermarsh and his Ruff project. He made the final stop to full Python 3.11 compatible parser, and actually informed me RustPython parser is actually fast. To be honest, I expected it is a lot slower than CPython parser due to (a lot) smaller amount of engineering power we put in.
+I also must recognize [@charliermarsh](https://github.com/charliermarsh) and his Ruff project. He made the final stop to full Python 3.11 compatible parser, and actually informed me RustPython parser is actually fast. To be honest, I expected it is a lot slower than CPython parser due to (a lot) smaller amount of engineering power we put in.
 
 The PyO3 project is really awesome. Combining Rust and Python using PyO3 is as easy as combining Rust and RustPython. No reason not to rewrite hot path of any Python program with Rust and PyO3.
 
-Also, a big thanks to @lifthrasiir for his advices on this project and numerous other works.
+Also, a big thanks to [@lifthrasiir](https://github.com/lifthrasiir) for his advices on this project and numerous other works.
