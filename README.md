@@ -55,6 +55,7 @@ Some applications make heavy use of AST. For instance, mypy seems to use `ast.pa
 Traditionally, parser took up a lesser proportion of the overall program runtime. These days, that is not true anymore. Compilers, including the parser, are run many multiple times before execution by development environment. And since it saves programmers' time than machine time, It is even more important.
 
 CPython may be better to invest more on parsers. I am not saying CPython needs to integrate RustPython parser to its core - though it will be a great event. CPython has much more room to optimize its parser. Unlike the ratio of benchmark enhancement, it will immediately gives benefits to every python programmers.
+That's happened on the other way. CPython 3.9 introduced new, more powerful and slower parser. Python 3.9 `ast.parse` is 10% slower than 3.8. Python tools using it also became slower. Regarding object construction and other optimizations in 3.9, it means the parser became a lot slower.
 
 ## Is this library useful?
 
