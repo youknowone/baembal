@@ -9,6 +9,11 @@ name = "baembal"
 crate-type = ["cdylib"]
 
 [dependencies]
-rustpython-parser = { git = "https://github.com/RustPython/Parser.git", rev = "fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec" }
-rustpython-ast = { git = "https://github.com/RustPython/Parser.git", rev = "fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec", features = ["pyo3", "pyo3-wrapper"]}
+rustpython-parser = { git = "https://github.com/RustPython/Parser.git", rev = "d23611db65dca2a71eb58fdcdce9d637f8fef8c2" }
+rustpython-ast = { git = "https://github.com/RustPython/Parser.git", rev = "d23611db65dca2a71eb58fdcdce9d637f8fef8c2" }
+rustpython-ast-pyo3 = { git = "https://github.com/RustPython/Parser.git", rev = "d23611db65dca2a71eb58fdcdce9d637f8fef8c2", features = ["wrapper"]}
 pyo3 = { version = "0.18.3", features = ["num-bigint", "num-complex"] }
+
+# rustpython-parser = { path = "../RustPython-parser/parser" }
+# rustpython-ast = { path = "../RustPython-parser/ast" }
+# rustpython-ast-pyo3 = { path = "../RustPython-parser/ast-pyo3", features = ["wrapper"]}

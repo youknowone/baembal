@@ -15,19 +15,19 @@ Used benchmark: bench1.py with CPython source code. (`Lib/**/*.py`)
 
 Raw data: (not statistically adjusted, but the ratio is stable)
 
-- p0 - CPython ast.parse: 8.93s
-- b1 - baembal.parse(locate=False): 8.45s
-- b2 - baembal.parse: 11.04s
-- b3 - baembal parsing-only w/o location: 5.55s
-- b4 - baembal parsing-only w/ location: 6.77s
+- p0 - CPython 3.11.1 ast.parse: 8.82s
+- b1 - baembal.parse(locate=False): 8.28s
+- b2 - baembal.parse: 10.95s
+- b3 - baembal parsing-only w/o location: 5.21s
+- b4 - baembal parsing-only w/ location: 6.48s
 
 Derived data:
-- Parsing + Locating + AST object construction + AST object location: 11.04s = b2
-- Parsing: 5.55s (b3)
-- AST object construction: 2.90s (b1 - b3)
-- Locating: 1.22s (b4 - b3)
-- Locating + AST object location: 2.59s (b2 - b1)
-- AST object location: 1.37s (b2 - b1) - (b4 - b3)  (Low accuracy)
+- Parsing + Locating + AST object construction + AST object location: 10.95s = b2
+- Parsing: 5.21s (b3)
+- AST object construction: 3.07s (b1 - b3)
+- Locating: 1.27s (b4 - b3)
+- Locating + AST object location: 2.67s (b2 - b1)
+- AST object location: 1.40s (b2 - b1) - (b4 - b3)  (Low accuracy)
 
 ## What it means?
 
