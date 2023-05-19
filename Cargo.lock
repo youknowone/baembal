@@ -351,7 +351,6 @@ dependencies = [
 [[package]]
 name = "ruff_source_location"
 version = "0.0.0"
-source = "git+https://github.com/RustPython/Parser.git?rev=fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec#fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec"
 dependencies = [
  "memchr",
  "once_cell",
@@ -361,7 +360,6 @@ dependencies = [
 [[package]]
 name = "ruff_text_size"
 version = "0.0.0"
-source = "git+https://github.com/RustPython/Parser.git?rev=fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec#fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec"
 
 [[package]]
 name = "rustc-hash"
@@ -372,7 +370,6 @@ checksum = "08d43f7aa6b08d49f382cde6a7982047c3426db949b1424bc4b7ec9ae12c6ce2"
 [[package]]
 name = "rustpython-ast"
 version = "0.2.0"
-source = "git+https://github.com/RustPython/Parser.git?rev=fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec#fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec"
 dependencies = [
  "is-macro",
  "num-bigint",
@@ -386,7 +383,6 @@ dependencies = [
 [[package]]
 name = "rustpython-parser"
 version = "0.2.0"
-source = "git+https://github.com/RustPython/Parser.git?rev=fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec#fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec"
 dependencies = [
  "anyhow",
  "is-macro",
@@ -409,7 +405,6 @@ dependencies = [
 [[package]]
 name = "rustpython-parser-core"
 version = "0.2.0"
-source = "git+https://github.com/RustPython/Parser.git?rev=fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec#fc301ab1b0f5483f2b2d3e28d8d92a2845b99fec"
 dependencies = [
  "is-macro",
  "ruff_source_location",
